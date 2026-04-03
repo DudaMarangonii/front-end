@@ -11,6 +11,7 @@ const estados = {
     comendo: "gojo_eat.png",
     alimentado: "gojo_a.png",
     ferlini: "ferlini.jpg",
+    dormir: "gojo_s.png",
 }
 
 let contador = 0; 
