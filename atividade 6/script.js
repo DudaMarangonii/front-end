@@ -8,7 +8,7 @@ const estados = {
     normal:  "gojo_n.png",
     puto: "gojo_p.png",
     morto: "gojo_d.png",
-    comendo: "gojo_c.png",
+    comendo: "gojo_eat.png",
     alimentado: "gojo_a.png",
 }
 
