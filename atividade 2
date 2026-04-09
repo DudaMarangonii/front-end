@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Circuitos - Arquitetura de Computadores</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+margin:0;
+}
+
+header{
+background:#2f4f2f;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+section{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+button{
+margin-top:20px;
+padding:10px;
+font-size:16px;
+cursor:pointer;
+}
+
+#resultado{
+margin-top:15px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Circuitos - Arquitetura de Computadores</h1>
+<p>Introdução básica</p>
+</header>
+
+<section>
+
+<h2>O que são circuitos?</h2>
+
+<p>
+Circuitos são conjuntos de componentes eletrônicos conectados
+que permitem a passagem de energia elétrica. Nos computadores,
+eles realizam cálculos e processam informações.
+</p>
+
+</section>
+
+<section>
+
+<h2>Circuitos Digitais</h2>
+
+<p>
+Circuitos digitais trabalham com dois valores:
+</p>
+
+<ul>
+<li>0 (desligado)</li>
+<li>1 (ligado)</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Portas Lógicas</h2>
+
+<ul>
+<li><b>AND</b> – retorna 1 se as duas entradas forem 1</li>
+<li><b>OR</b> – retorna 1 se pelo menos uma entrada for 1</li>
+<li><b>NOT</b> – inverte o valor</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Perguntas</h2>
+
+<p>1. Quantos valores os circuitos digitais usam?</p>
+<select id="p1">
+<option>Escolha</option>
+<option>5</option>
+<option>2</option>
+<option>10</option>
+</select>
+
+<br><br>
+
+<p>2. O que a porta NOT faz?</p>
+<select id="p2">
+<option>Escolha</option>
+<option>Soma números</option>
+<option>Inverte o valor</option>
+<option>Desliga o computador</option>
+</select>
+
+<br><br>
+
+<p>3. Quando a porta AND retorna 1?</p>
+<select id="p3">
+<option>Escolha</option>
+<option>Quando as duas entradas são 1</option>
+<option>Quando uma é 0</option>
+<option>Sempre</option>
+</select>
+
+<br>
+
+<button onclick="corrigir()">Enviar Respostas</button>
+
+<div id="resultado"></div>
+
+</section>
+
+<script>
+
+function corrigir(){
+
+let pontos = 0
+
+if(document.getElementById("p1").value == "2"){
+pontos++
+}
+
+if(document.getElementById("p2").value == "Inverte o valor"){
+pontos++
+}
+
+if(document.getElementById("p3").value == "Quando as duas entradas são 1"){
+pontos++
+}
+
+document.getElementById("resultado").innerHTML =
+"Você acertou " + pontos + " de 3 perguntas."
+
+}
+
+</script>
+
+</body>
+</html>
