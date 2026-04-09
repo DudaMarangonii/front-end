@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garagem Alinhada - Coleção</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #111;
+            border-bottom: 2px solid #ff0000;
+        }
+
+       
+        .grid-showroom {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .card-carro {
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; 
+            border: 1px solid #333;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 220px;             
+            overflow: hidden;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;        }
+
+        .texto-carro {
+            padding: 20px;
+            flex-grow: 1; 
+        }
+
+        .texto-carro h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: #ff0000;
+        }
+
+        .origem-tag {
+            font-size: 0.75rem;
+            background: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .historia {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #bbb;
+            line-height: 1.5;
+        }
+
+        footer { text-align: center; padding: 40px; color: #444; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> ELITE AUTOMOTIVE GALLERY </h1>
+    <p>Exibição Técnica e Histórica</p>
+</header>
+
+<main class="grid-showroom">
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://i.pinimg.com/736x/a2/90/df/a290df218ab4d1ee9d42807a8627c8f0.jpg">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Itália</span>
+            <h2>LaFerrari</h2>
+            <p class="historia">Foi o primeiro híbrido da marca. Representa o ápice da tecnologia da Ferrari na época, combinando um motor a combustão pura com o sistema KERS vindo da Fórmula 1.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://i.pinimg.com/1200x/ef/c5/21/efc521d1ebf0b3bb1adadb51e810a3ad.jpg">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Itália</span>
+            <h2>Lamborghini Aventador</h2>
+            <p class="historia">Substituiu o Murciélago e se tornou o ícone dos motores V12 aspirados. Seu design foi inspirado nos aviões de caça mais modernos da aeronáutica.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://i.pinimg.com/736x/82/82/8c/82828cdbde5a74a509862b1b061754c3.jpg" alt="Porsche">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Alemanha</span>
+            <h2>Porsche 911 GT3</h2>
+            <p class="historia">É a versão do 911 focada em puristas. Usa um motor aspirado que gira até 9.000 rpm e possui a famosa suspensão dianteira de braços duplos sobrepostos, derivada dos carros de corrida.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://i.redd.it/ub6bse5yxzkc1.jpeg">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Reino Unido</span>
+            <h2>McLaren 720S</h2>
+            <p class="historia">Conhecida por sua leveza extrema e aerodinâmica "ativa". É um dos carros que mais surpreendeu o mundo pela sua capacidade de vencer rivais muito mais potentes em pistas e arrancadas.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://cdn.motor1.com/images/mgl/6Lq0N/s1/bugatti-chiron-super-sport-2021.webp" alt="Bugatti">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">França</span>
+            <h2>Bugatti Chiron</h2>
+            <p class="historia">O sucessor do Veyron. Foi projetado para ser o carro mais luxuoso e rápido do mundo, utilizando um motor W16 com quatro turbos para alcançar velocidades acima de 400 km/h com facilidade.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://octane.rent/wp-content/uploads/2023/03/mercedes-gts-white-1-600x400.webp">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Alemanha</span>
+            <h2>Mercedes AMG GT</h2>
+            <p class="historia">Um "muscle car" europeu com design sofisticado e um motor V8 que produz um dos melhores sons da atualidade.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://s3.glbimg.com/v1/AUTH_35862ca5c6ab48b992baf1f1b4f7062e/m-extra-globo-com/incoming/14754964-d35-dac/w488h275-PROP/nissan-gt-r-2015-no-velo-citta-(1).jpg" alt="Nissan">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Japão</span>
+            <h2>Nissan GT-R</h2>
+            <p class="historia">Apelidado de "Godzilla", o GT-R revolucionou o mercado por usar tecnologia de tração integral e computadores avançados para humilhar supercarros que custavam o triplo do seu preço.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://octane.rent/wp-content/uploads/2023/12/chevrolet-corvette-c8-2-1-2.jpg">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">EUA</span>
+            <h2>Chevrolet Corvette C8</h2>
+            <p class="historia">A revolução do ícone americano: agora com motor central para melhor equilíbrio em curvas de alta velocidade.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/575x825/azure/2022-05/Stream_3%20copy.png?h=0a9494c3&itok=hFmV2SmV" alt="Koenigsegg">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Suécia</span>
+            <h2>Koenigsegg Jesko</h2>
+            <p class="historia">Nomeado em homenagem ao pai do fundador da marca. Possui a "Light Speed Transmission", uma caixa de câmbio que permite trocar de qualquer marcha para qualquer outra instantaneamente.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://i.pinimg.com/736x/1b/d0/a3/1bd0a379f11d8c6631d6c0c89f63d878.jpg" alt="BMW">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Alemanha</span>
+            <h2>BMW M4 Competition</h2>
+            <p class="historia">Representa o equilíbrio perfeito entre uso diário e performance de pista. Polêmico pelo seu design de grade frontal, mas aclamado pela sua dinâmica de condução e motor biturbo de seis cilindros.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6xtnfe165Lz8uy0eiY0kJOm8apykfjd4int9SX2ZcdnYjQVlWG7XIvP9_1v-ojxCdc1O7A4Vg2c1oHf5P9F4qgSuD9t7xCIUjSuZ3FWGwnf25eJXDERJF1UGPvb09N7J2YNVgFcfY_YuuAWPKNnsUQaeXN4KTsIftb_VbwsHO1jWKWotTGaPs8B10dqQ/w1200-h630-p-k-no-nu/Bolide%20(3).jpg" alt="Bugatti Bolide">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">França</span>
+            <h2>Bugatti Bolide</h2>
+            <p class="historia">Um protótipo experimental focado apenas em pista, com peso reduzido e aerodinâmica extrema.</p>
+        </div>
+    </article>
+
+    <article class="card-carro">
+        <div class="img-container">
+            <img src="https://diecastsociety.com/wp-content/uploads/2024/08/TGM18009e.jpg" alt="Apollo project evo">
+        </div>
+        <div class="texto-carro">
+            <span class="origem-tag">Alemanha</span>
+            <h2>Apollo Project EVO</h2>
+            <p class="historia">Sucessor do Intensa Emozione, possui o design mais agressivo e alienígena da atualidade.</p>
+        </div>
+    </article>
+
+</main>
+
+<footer>
+   </footer>
+
+</body>
+</html>
